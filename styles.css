@@ -16,6 +16,16 @@ nav ul li {
     font-size: 3vh;
 }
 
+.rug {
+    color: inherit;
+    text-decoration: none;
+}
+
+.rug:hover {
+    color: #44545E;
+    transition: all 0.5s ease;
+}
+
 .ul1 {
     display: flex;
     flex-direction: row;
@@ -34,6 +44,7 @@ header {
     background-position: center;
     /* margin-top: 5%; */
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -80,6 +91,8 @@ h4 {
     font-family: 'Raleway', sans-serif;
     color: #4C5B65;
     text-align: center;
+    margin-top: 10vh;
+    font-size: 3vh;
 }
 
 .table {
@@ -101,6 +114,11 @@ img {
     flex-direction: column;
     width: 30vw;
     margin: 1%;
+}
+
+.watch {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cactus {
@@ -169,10 +187,19 @@ h5 {
     flex-direction: column;
 }
 
+.flic:hover {
+    opacity: 0.7;
+    transition: all 0.5s ease;
+}
+
 .chair {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    /* align-items: center; */
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .comment1 {
@@ -190,43 +217,50 @@ h5 {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    width: 80vw;
+
 }
 
 .two {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 70vw;
+    width: 80vw;
+    /* margin-left: auto;
+    margin-right: auto; */
     margin-bottom: 2vh
 }
 
 .three {
-    width: 40vw;
+    width: 50vw;
     margin-right: 1vh;
     font-family: Lato, sans-serif;
     border: 2px solid black;
 }
 
 .four {
-    width: 40vw;
+    width: 50vw;
     margin-left: 1vh;
     font-family: Lato, sans-serif;
     border: 2px solid black;
 }
 
 .five {
-    width: 40vw;
+    width: 50vw;
     margin-left: 1vw;
 }
 
 textarea {
     margin-bottom: 2vh;
     height: 14vh;
-    font-family: Lato, sans-serif;
+    width: 80vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
     border: 2px solid black;
     padding: 1vw;
-    font-weight: 700;
-    color: #4C5B65
+    color: #4C5B65;
+    box-sizing: border-box;
 }
 
 input {
@@ -234,16 +268,19 @@ input {
     height: 5vh;
     padding-left: 1vw;
     font-weight: 700;
+    text-transform: capitalize;
 }
 
 .submit {
     text-align: center;
+    width: 80vw;
+    box-sizing: border-box;
 }
 
 footer {
     background-color: #C5F6F7;
     padding-top: 10vh;
-    padding-bottom: 5vh;
+    padding-bottom: 2vh;
 }
 
 hr {
@@ -263,14 +300,14 @@ hr {
     color: #61717A;
     font-size: 3vh;
     font-weight: 400;
-    margin-top: 8vh;
+    margin-top: 4vh;
 }
 
-.media {
+/* .media {
     display: flex;
     justify-content: center;
     font-size: 30px;
-}
+} */
 
 .icons {
     display: flex;
@@ -290,6 +327,15 @@ hr {
     width: 10vw;
     border: solid 2px black;
     margin-left: 2vw;
+}
+
+.button1:hover {
+    background-color: #44545E;
+}
+
+.submit:hover {
+    background-color: #44545E;
+    transition:all 0.4s ease;
 }
 
 form {
@@ -329,4 +375,153 @@ form {
 
 .hamburger {
     display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    .cactus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .chair {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+    }
+    .cop .police .pig {
+        display: flex;
+        flex-direction: row;
+        width: 20%;
+    }
+    .flic {
+        padding: 2vh;
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+    }
+    .one {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin: 1%;
+    }
+    img {
+        width: auto;
+        height: auto;
+    }
+    .read {
+        margin-top: 1vh;
+        margin-bottom: 3vh;
+    }
+    .table {
+        margin-bottom: 0;
+    }
+    nav ul li {
+        padding: 2% 7%;
+        list-style-type: none;
+        color: #87A5B5;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 3vh;
+    }
+    .two {
+        display: flex;
+        flex-direction: column;
+    }
+    .three {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 2vh;
+        width: 80vw;
+        box-sizing: border-box;
+    }
+    .four {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 2vh;
+        width: 80vw;
+        box-sizing: border-box;
+    }
+    .five {
+        margin-left: 0;
+        margin-right: 0;
+        width: 80vw;
+        box-sizing: border-box;
+    }
+    ::-webkit-input-placeholder {
+        text-align: left;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+    }
+    
+    :-ms-input-placeholder {  
+        text-align: left; 
+    }
+}
+@media only screen and (max-width: 600px) {
+    .hamburger {
+        display: flex;
+        justify-content: flex-start;
+        padding: 1vh 1vh 1vh 2vh;
+        font-size: 7vh;
+    }
+    .ul1 {
+        display: none;
+    }
+    .nav1 {
+        display: flex;
+        justify-content: flex-start;
+        background-color: transparent;
+    }
+    .yes {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .cop .police .pig {
+        display: flex;
+        flex-direction: row;
+        width: 15%;
+    }
+    .chair {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 40%;
+    }
+    .flic {
+        padding: 0.5vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .email {
+        width: 50vw;
+        box-sizing: border-box;
+        margin: 0%;
+        margin-bottom: 2vh;
+        border: none;
+
+    }
+    .button1 {
+        width: 50vw;
+        box-sizing: border-box;
+        margin: 0%;
+    } 
+    h1 {
+        letter-spacing: 0.2em;
+        bottom: -30%;
+    }
+    h2 {
+        bottom: -30%;
+    }
 }
